@@ -17,4 +17,4 @@ def notdash():
         color=df.species, labels={'color': 'species'}
     )
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return render_template('notdash.html', graphJSON=graphJSON)
+    return render_template('scatter.html', graphJSON=graphJSON)
